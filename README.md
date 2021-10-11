@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://lizcuack.github.io/Frontend-Mentor---Order-Summary)
+- Live Site URL: (https://lizcuack.github.io/Frontend-Mentor---Order-Summary)
 
 ### Built with
 
