@@ -39,10 +39,7 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
-
-```html
-<h1>I improved and my knowledge in HTML and CSS Flexbox.</h1>
-```
+I improved and my knowledge in HTML and CSS Flexbox.
 ### Continued development
 
 The first version of this practice was done in HTML and CSS. 
