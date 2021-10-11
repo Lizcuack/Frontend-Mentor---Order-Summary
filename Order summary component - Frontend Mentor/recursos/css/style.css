@@ -1,0 +1,191 @@
+/* Solution by Alex (Lizcuack) */
+
+/* Body */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: Red Hat Display;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+
+/* Card */
+
+.tarjeta{
+    position: relative;
+    margin: auto;
+    width: 390px;
+    height: 700px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.137);
+    overflow: hidden;
+}
+
+.tarjeta img{
+    width: 100%;
+}
+
+.tarjeta__textos{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+
+.tarjeta__textos h1{
+    font-weight: 900;
+    padding: 25px;
+}
+
+.tarjeta__textos p{
+    padding: 0px 40px 20px;
+    color: hsl(224, 23%, 55%);
+    font-style: 16px;
+}
+
+/* Plan */
+
+.tarjeta__planes{
+    overflow: hidden;
+    width: 80%;
+    height: 80px;
+    background: hsl(225, 100%, 98%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+}
+
+.tarjeta__planes img{
+    width: 50px;
+    height: 50px;
+}
+
+.tarjeta__plan span{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.tarjeta__plan p{
+    color: hsl(224, 23%, 55%);
+}
+
+.tarjeta__planes a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+    transition: all 0.9s ease-in-out;
+}
+
+.tarjeta__planes a:hover{
+    outline: none;
+    text-decoration: none;
+    color:hsla(245, 75%, 52%, 0.746);
+}
+
+/* Buttons */
+
+.tarjeta__botones{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 80%;
+    height: 150px;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+button:nth-child(1){
+    background-color: hsl(245, 75%, 52%);
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 900;
+    font-family: Red Hat Display;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px 1px hsla(245, 75%, 52%, 0.342);
+}
+
+button:nth-child(1):hover{
+    background-color: hsl(245, 79%, 63%);
+}
+
+button:nth-child(2){
+    background-color: hsl(0, 0%, 100%);
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 900;
+    font-family: Red Hat Display;
+    color: hsl(224, 23%, 55%);
+    transition: all 0.3s ease-in-out;
+}
+
+button:nth-child(2):hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* Attribution */
+
+.attribution{
+    padding: 35px;
+    text-align: center;
+}
+
+
+/* Mobile Design */
+
+@media screen and (max-width:375px){
+
+    body{
+        background: url(img/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .tarjeta{
+        width: 330px;
+        height: 600px;
+    }
+
+    .tarjeta__textos h1{
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .tarjeta__textos p{
+        padding: 10px 30px;
+    }
+
+    .tarjeta__plan span{
+        font-size: 15px;
+    }
+
+    .tarjeta__plan p{
+        font-size: 15px;
+    }
+
+    .tarjeta__planes a{
+        font-size: 13px;
+    }
+}
